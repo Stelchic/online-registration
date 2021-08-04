@@ -122,16 +122,25 @@ button {
     height: 4rem;
     margin: 1rem 0;
 }
+input,
+select,
+button,
+textarea {
+    outline: 0;
+    border: #2d3945 0px solid;
+}
 input:focus,
 select:focus,
 button:focus,
-textarea:focus             {
+textarea:focus {
+    transition: ease-in .5s;
     border: #2d3945 2px solid;
-    outline: 0;
 }
 /* ==[ Footer ]== */
 footer {
-    margin-bottom: 10rem;
+    padding-top: 1rem;
+    padding-bottom: 10rem;
+    background-color: #4ebbb5;
 }
 #copyright {
     text-align: center;
@@ -158,9 +167,9 @@ footer {
         width: 70%;
     }
     input[id="zip"] {
-        width: 30%;
+        width: 25%;
     }
     footer {
-        margin-bottom: 20rem;
+        padding-bottom: 20rem;
     }
 }
