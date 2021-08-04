@@ -75,10 +75,6 @@ textarea {
 label {
     display: block;
 }
-label.inline {
-    display: inline;
-}
-
 input[type="text"],
 input[type="email"],
 input[type="tel"],
@@ -126,10 +122,45 @@ button {
     height: 4rem;
     margin: 1rem 0;
 }
+input:focus,
+select:focus,
+button:focus,
+textarea:focus             {
+    border: #2d3945 2px solid;
+    outline: 0;
+}
 /* ==[ Footer ]== */
 footer {
     margin-bottom: 10rem;
 }
 #copyright {
     text-align: center;
+}
+/* ==[ Media Queries ]== */
+@media screen and (min-width:768px) {
+    main {
+        width: 60%;
+        margin: 0 auto;
+    }
+    .form,
+    .input {
+        display: flex;
+    }
+    .form {
+        flex-direction: column;
+    }
+    .form label {
+        width: 30%;
+        margin-top: 1rem;
+    }
+    .input input:not(input[id="zip"]),
+    .input select {
+        width: 70%;
+    }
+    input[id="zip"] {
+        width: 30%;
+    }
+    footer {
+        margin-bottom: 20rem;
+    }
 }
