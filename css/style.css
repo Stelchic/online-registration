@@ -162,7 +162,7 @@ footer {
         width: 30%;
         margin-top: 1rem;
     }
-    .input input:not(input[id="zip"]),
+    .input input,
     .input select {
         width: 70%;
     }
